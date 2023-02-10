@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="parameters">
+        <div>
+            <fieldset id="ballField">
+                <legend>
+                    <h3>Choose a ball size: </h3>
+                </legend>
+                <label for="ballSize0">Ball ? :</label>
+                <input type="radio" name="difficulty" id="ballSize0" required>
+                <label for="ballSizeSmall">Small :</label>
+                <input type="radio" name="difficulty" id="ballSizeSmall">
+                <label for="ballSizeMedium">Medium :</label>
+                <input type="radio" name="difficulty" id="ballSizeMedium">
+                <label for="ballSizeLarge">Large :</label>
+                <input type="radio" name="difficulty" id="ballSizeLarge">
+                <label for="ballSizeXXL">XXL :</label>
+                <input type="radio" name="difficulty" id="ballSizeXXL">
+            </fieldset>
+            <fieldset id="paddle">
+                <legend>
+                    <h3>Choose a paddle size: </h3>
+                </legend>
+                <label for="paddleSize0">??? :</label>
+                <input type="radio" name="paddleSize" id="paddleSize0" required>
+                <label for="paddleSizeSmall">Small :</label>
+                <input type="radio" name="paddleSize" id="paddleSizeSmall">
+                <label for="paddleSizeMedium">Medium :</label>
+                <input type="radio" name="paddleSize" id="paddleSizeMedium">
+                <label for="paddleSizeLarge">Large :</label>
+                <input type="radio" name="paddleSize" id="paddleSizeLarge">
+                <label for="paddleSizeXXL">XXL :</label>
+                <input type="radio" name="paddleSize" id="paddleSizeXXl">
+            </fieldset>
+            <fieldset id="colour">
+                <legend>
+                    <h3>Chose colours : </h3>
+                </legend>
+                <label for="basic">White</label>
+                <input type="radio" name="colour" id="basic" required>
+                <label for="rainbow">RAINBOW BABY</label>
+                <input type="radio" name="colour" id="rainbow">
+                <label for="dark">Dark</label>
+                <input type="radio" name="colour" id="dark">
+
+            </fieldset>
+            <fieldset id="ballIMG">
+                <legend>
+                    <h3>Chose Ball aspect : </h3>
+                </legend>
+                <label for="normal">Basic</label>
+                <input type="radio" name="ballImage" id="normal" required>
+                <label for="pepe">It's pepe Time</label>
+                <input type="radio" name="ballImage" id="pepe">
+
+            </fieldset>
+            <input type="submit" value="Validate parameters" id="validate" onclick="validateForms()">
+        </div>
+    </section>
+    <section id="goal">
+        <div id="left"><img src="assets/immonde.gif" alt=""></div>
+        <div id="megumin"><img src="assets/megumin-explosion.webp" alt="MEGUMIN EXPLOSION"></div>
+        <div id="right"><img src="assets/immonde.gif" alt=""></div>
+    </section>
+    <h2>Player 1: 0 / Player 2: 0</h2>
+    <main>
+        <div class="stick" id="player">
+        </div>
+        <div id="ball"></div>
+        <div class="stick" id="enemy">
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
